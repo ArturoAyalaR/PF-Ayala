@@ -1,21 +1,23 @@
-/*index**/
+/**index**/
 
 
-.bg-main-label {
-    background-color: $primary-color;
-}
+
 
 .main-info {
     @include flex(row, center, normal);
     padding: 30px;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    background-color: $main-color;
+    background-image: url('../assets/images/3cervezas.png');
+    background-size: cover;
+    color: whitesmoke;
+
 
     &-label {
         @include flex(column, space-around, center);
         margin: 20px;
-        background-color: $primary-color;
+        animation: fadeIn 3s ease;
+        background-color: $label-color;
         border-radius: 10px;
 
         img {
@@ -51,12 +53,4 @@
         }
     }
 
-}
-
-.main-last {
-    padding: 20px;
-    text-align: center;
-    color: #40A2E3;
-    text-shadow: 2px 2px 2px;
-    background-color: $main-color;
 }

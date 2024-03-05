@@ -3,8 +3,15 @@
 * {
   margin: 0;
   padding: 0;
+  font-family: "Ubuntu", "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
 
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    filter: blur(20px);
+  }
+}
 /**footer**/
 .footer-container {
   display: flex;
@@ -29,7 +36,7 @@ header {
 }
 
 .bg-head {
-  background-color: #B4B4B8;
+  background-color: white;
   color: black;
   margin: 0;
 }
@@ -38,11 +45,7 @@ li {
   color: antiquewhite;
 }
 
-/*index**/
-.bg-main-label {
-  background-color: #F2EFE5;
-}
-
+/**index**/
 .main-info {
   display: flex;
   flex-direction: row;
@@ -51,7 +54,9 @@ li {
   padding: 30px;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  background-color: #E3E1D9;
+  background-image: url("../assets/images/3cervezas.png");
+  background-size: cover;
+  color: whitesmoke;
 }
 .main-info-label {
   display: flex;
@@ -59,7 +64,8 @@ li {
   justify-content: space-around;
   align-items: center;
   margin: 20px;
-  background-color: #F2EFE5;
+  animation: fadeIn 3s ease;
+  background-color: rgb(96, 102, 105);
   border-radius: 10px;
 }
 .main-info-label img {
@@ -73,25 +79,17 @@ li {
   margin: 5px;
 }
 .main-info-label:hover {
-  background-color: #40A2E3;
+  background-color: black;
   box-shadow: 2px 2px 2px;
   transition: 0.7s;
 }
 .main-info-label:hover h2 {
-  background-color: #40A2E3;
+  background-color: black;
   transition: 0.7s;
 }
 .main-info-label:hover p {
-  background-color: #40A2E3;
+  background-color: black;
   transition: 0.7s;
-}
-
-.main-last {
-  padding: 20px;
-  text-align: center;
-  color: #40A2E3;
-  text-shadow: 2px 2px 2px;
-  background-color: #E3E1D9;
 }
 
 /*Productos*/
@@ -102,14 +100,11 @@ li {
   text-align: center;
   margin: 20px;
 }
-.main-productos .carousel {
-  margin: 200px;
-}
-.main-productos .carousel .carousel-item {
+.main-productos .carousel-item {
   width: 100%;
   height: 100%;
 }
-.main-productos .carousel .carousel-item img {
+.main-productos .carousel-item img {
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -156,7 +151,7 @@ li {
 /*Aboutus*/
 .aboutus {
   height: 623px;
-  background-color: rgb(143, 148, 155);
+  background-color: rgb(207, 203, 203);
 }
 .aboutus-titulo {
   padding: 15px;
@@ -171,13 +166,15 @@ li {
   align-items: center;
   padding: 15px;
   margin: 20px;
-  color: antiquewhite;
+  color: whitesmoke;
   background-color: rgb(107, 119, 134);
   border-radius: 5px;
   box-shadow: 2px 2px 2px black;
 }
 .aboutus p {
   justify-content: center;
+  padding: 15px;
+  font-size: 1.5rem;
 }
 .aboutus img {
   flex: 1;
@@ -197,7 +194,7 @@ li {
   height: 600px;
 }
 .form-container .btn-primary {
-  background-color: #B4B4B8;
+  background-color: white;
 }
 .form-container .mb-3 .form-label {
   color: whitesmoke;
@@ -213,6 +210,8 @@ li {
     display: flex;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    background-image: none;
+    background-color: rgb(135, 145, 172);
   }
   .textarea {
     height: 300px;
@@ -223,6 +222,7 @@ li {
     display: flex;
     display: grid;
     grid-template-columns: repeat(1, 1fr);
+    background-color: white;
   }
   .footer-container {
     font-size: 15px;
@@ -244,9 +244,11 @@ li {
     padding: 10px;
     margin: 10px;
     color: white;
-    background-color: #3887BE;
     justify-content: center;
     border-radius: 5px;
+  }
+  .aboutus-container p {
+    font-size: 1rem;
   }
   .aboutus-container img {
     width: 100%;

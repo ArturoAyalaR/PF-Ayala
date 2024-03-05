@@ -2,7 +2,7 @@
 
 .aboutus {
     height: 623px;
-    background-color: rgb(143, 148, 155);
+    background-color: $main-color;
 
     &-titulo {
         padding: 15px;
@@ -15,7 +15,7 @@
         @include flex(row, space-evenly, center);
         padding: 15px;
         margin: 20px;
-        color: antiquewhite;
+        color: whitesmoke;
         background-color: rgb(107, 119, 134);
         border-radius: 5px;
         box-shadow: 2px 2px 2px black;
@@ -24,6 +24,8 @@
 
     p {
         justify-content: center;
+        padding: 15px;
+        font-size: 1.5rem;
     }
 
     img {

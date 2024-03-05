@@ -4,3 +4,13 @@
     justify-content: $justify;
     align-items: $align;
 }
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        filter: blur(20px);
+    }
+
+
+
+}
