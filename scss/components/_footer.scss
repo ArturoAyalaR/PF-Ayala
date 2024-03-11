@@ -1,17 +1,67 @@
 /**footer**/
-.footer-container {
-    @include flex(column, center, center);
-    background-color: #7a91d1;
-    color: black;
-    bottom: 0;
-    flex: 1;
-
-}
+footer {
+    background-color: $head-color;
+    color: $head-font-color;
+    padding-top: 15px;
+    border-top: 1px solid black;
 
 
+    .footer-container {
+        width: 100%;
+        margin: auto;
+        display: flex;
+        justify-content: center;
+    }
 
-.insta-logo a,
-i {
-    color: black;
-    justify-content: end;
+    .footer-content {
+
+        width: 50%;
+
+        h3 {
+            font-size: 20 px;
+            margin-bottom: 5px;
+            text-align: center;
+        }
+
+        p {
+            font-size: 15px;
+            text-align: center;
+            width: 100%;
+            margin: auto;
+
+        }
+
+        li {
+            list-style-type: none;
+            text-align: center;
+
+
+            a {
+                color: $head-font-color;
+
+                :hover {
+                    color: grey;
+                }
+            }
+
+            i {
+                color: $head-font-color;
+
+                :hover {
+                    color: grey;
+                }
+
+
+            }
+
+        }
+
+    }
+
+    .bottom-bar {
+        background-color: $head-color;
+        color: $head-font-color;
+        text-align: center;
+        padding: 5px;
+    }
 }

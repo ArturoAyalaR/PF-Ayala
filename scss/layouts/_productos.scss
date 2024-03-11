@@ -3,11 +3,26 @@
 
 .main-productos {
 
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    text-align: center;
-    margin: 20px;
+    background-color: $main-color;
+
+    &-title {
+        padding: 10px;
+        text-align: center;
+        color: $head-color;
+
+        h1 {
+            font-size: 4rem;
+            font-weight: bold;
+        }
+
+    }
+
+    .carousel {
+        align-items: center;
+        margin-left: 10%;
+        width: 80%;
+        padding: 15px;
+    }
 
 
     .carousel-item {

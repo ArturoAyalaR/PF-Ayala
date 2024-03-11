@@ -3,16 +3,82 @@
 
 /**vista tablet**/
 @media (max-width:1024px) {
-    .main-info {
-        display: flex;
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
+
+    /*index*/
+    .main {
         background-image: none;
-        background-color: rgb(135, 145, 172);
+        background-color: $main-color;
+
+        &-title {
+            background-color: $main-color;
+            ;
+        }
+
+
+
+        &-info {
+            display: flex;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            background-image: none;
+            background-color: $main-color;
+
+            &-label {
+                background-color: whitesmoke;
+                color: black;
+                border: 1px solid black;
+
+
+            }
+        }
+
     }
 
-    .textarea {
-        height: 300px;
+    /*productos*/
+    .main-productos {
+        &-title {
+            h1 {
+                font-size: 3rem;
+            }
+        }
+    }
+
+    /*about us*/
+    .aboutus-box {
+
+        flex-direction: column;
+        color: black;
+        align-items: center;
+
+        box-img {
+            padding: 10px;
+            height: 300px;
+            align-items: center;
+        }
+
+        .box-img img {
+            width: 100%;
+            object-fit: cover;
+        }
+
+    }
+
+    /*proceso*/
+    .main-process {
+
+        .process-content {
+            h1 {
+                font-size: 2px;
+            }
+
+            h2 {
+                font-size: 2rem;
+            }
+        }
+
+        .textarea {
+            height: 300px;
+        }
     }
 
 
@@ -21,21 +87,29 @@
 
 @media (max-width: 768px) {
 
-    .main-info {
-        display: flex;
-        display: grid;
-        grid-template-columns: repeat(1, 1fr);
-        background-color: white;
+    .main {
+        h1 {
+            font-size: 3rem;
+        }
+
+        .main-info {
+
+            display: flex;
+            display: grid;
+            grid-template-columns: repeat(1, 1fr);
+            background-color: $main-color;
+        }
     }
 
-    .footer-container {
-        font-size: 15px;
-        height: 700px;
-        width: auto;
-        margin: 2 0px;
-
-
+    .main-productos {
+        &-title {
+            h1 {
+                font-size: 2rem;
+            }
+        }
     }
+
+
 
     .form-container,
     .form-control {
@@ -46,30 +120,53 @@
         height: 500px;
     }
 
-    .aboutus-container {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
-        padding: 10px;
-        margin: 10px;
-        color: white;
 
-        justify-content: center;
-        border-radius: 5px;
-
-        p {
-            font-size: 1rem;
+    .aboutus {
+        &-titulo {
+            h1 {
+                font-size: 2.5rem;
+            }
         }
 
-        img {
-            width: 100%;
+
+        &-box {
+
+
+            box-img {
+                padding: 10px;
+                height: 50%;
+                align-items: center;
+            }
+
+            .box-img img {
+                width: 100%;
+                object-fit: cover;
+            }
+
+
+
+
+
         }
     }
 
-    .process-content iframe {
-        width: 360px;
-        height: 215px;
+    .process-content {
+        h1 {
+            font-size: 20px;
+        }
 
+        p {
+            font-size: 10px;
+            color: beige;
+        }
+
+        h2 {
+            font-size: 15px;
+        }
+
+        iframe {
+            width: 60%;
+        }
     }
 
 
