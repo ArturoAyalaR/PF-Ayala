@@ -68,11 +68,20 @@
 
         .process-content {
             h1 {
-                font-size: 2px;
+                font-size: 25px;
             }
 
+            p {
+                font-size: 15px;
+            }
+
+            li {
+                font-size: 15px;
+            }
+
+
             h2 {
-                font-size: 2rem;
+                font-size: 20px;
             }
         }
 
@@ -87,6 +96,7 @@
 
 @media (max-width: 768px) {
 
+    //index
     .main {
         h1 {
             font-size: 3rem;
@@ -101,6 +111,7 @@
         }
     }
 
+    //productos
     .main-productos {
         &-title {
             h1 {
@@ -120,7 +131,7 @@
         height: 500px;
     }
 
-
+    //aboutus
     .aboutus {
         &-titulo {
             h1 {
@@ -150,18 +161,24 @@
         }
     }
 
+    //process
     .process-content {
         h1 {
             font-size: 20px;
+
         }
 
         p {
-            font-size: 10px;
+            font-size: 7px;
             color: beige;
         }
 
         h2 {
-            font-size: 15px;
+            font-size: 1rem;
+        }
+
+        li {
+            font-size: 5px
         }
 
         iframe {

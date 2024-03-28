@@ -322,10 +322,16 @@ li {
   }
   /*proceso*/
   .main-process .process-content h1 {
-    font-size: 2px;
+    font-size: 25px;
+  }
+  .main-process .process-content p {
+    font-size: 15px;
+  }
+  .main-process .process-content li {
+    font-size: 15px;
   }
   .main-process .process-content h2 {
-    font-size: 2rem;
+    font-size: 20px;
   }
   .main-process .textarea {
     height: 300px;
@@ -367,11 +373,14 @@ li {
     font-size: 20px;
   }
   .process-content p {
-    font-size: 10px;
+    font-size: 7px;
     color: beige;
   }
   .process-content h2 {
-    font-size: 15px;
+    font-size: 1rem;
+  }
+  .process-content li {
+    font-size: 5px;
   }
   .process-content iframe {
     width: 60%;
